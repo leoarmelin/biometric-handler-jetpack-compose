@@ -54,9 +54,9 @@ class MainActivity : FragmentActivity(), BiometricHandler.OnAuthListener,
     override fun onAvailableSuccess() {
         Log.d("BiometricHandler", "onAvailableSuccess")
         biometricHandler.configureBiometricHandler(
-            "My biometric title",
-            "A good description",
-            "Not today pal"
+            dialogTitle = "My biometric title",
+            dialogSubtitle = "A good description",
+            dialogNegativeButtonText = "Not today pal"
         )
     }
 
